@@ -90,8 +90,8 @@ def reg():
         password = request.form['password']
         
         #Ödev #3 Kullanıcı verilerinin veri tabanına kaydedilmesini sağlayın
-        kullanıcı = User(email=email, password=password)
-        db.session.add(kullanıcı)
+        kullanici = User(email=email, password=password)
+        db.session.add(kullanici)
         db.session.commit()
 
         
